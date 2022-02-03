@@ -2,7 +2,7 @@ const { schedule } = require("@netlify/functions");
 const handler = async () => {
   return {
     statusCode: 200,
-    body: "ok",
+    body: "hello",
   };
 };
 
