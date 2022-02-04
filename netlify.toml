@@ -1,2 +1,2 @@
-[functions."hello-world"]
-schedule ="* * * * *"
+[functions."devTo"]
+schedule ="*/5 * * * *"
