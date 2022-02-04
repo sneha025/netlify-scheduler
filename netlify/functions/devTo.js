@@ -5,8 +5,8 @@ const handler = async (event) => {
   //create a dummy data for dev to blog posting.
   var devToPost = JSON.stringify({
     article: {
-      title: "Netlify Schedule function",
-      body_markdown: "Testing2 Scheduling",
+      title: "Netlify Schedule",
+      body_markdown: "Test blog for testing netlify Scheduling",
       published: false,
     },
   });
@@ -22,13 +22,17 @@ const handler = async (event) => {
     data: devToPost,
   };
 
-  axios(config)
+  await axios(config)
     .then((data) => {
       console.log(data);
     })
     .catch((err) => {
       console.log("ERROR", err);
     });
+  return {
+    statusCode: 200,
+    body: "rebuild",
+  };
 };
 
 module.exports.handler = handler;
