@@ -6,4 +6,5 @@ const handler = async () => {
   };
 };
 
-module.exports.handler = schedule("@hourly", handler);
+// module.exports.handler = schedule("@hourly", handler);
+module.exports.handler = handler;
