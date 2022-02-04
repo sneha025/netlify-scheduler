@@ -6,7 +6,7 @@ const handler = async (event) => {
   var devToPost = JSON.stringify({
     article: {
       title: "Netlify Schedule function",
-      body_markdown: "Testing Scheduling",
+      body_markdown: "Testing2 Scheduling",
       published: false,
     },
   });
@@ -16,6 +16,8 @@ const handler = async (event) => {
     headers: {
       "Content-Type": "application/json",
       "api-key": "r7p6nt1py397dGDfkdCNznfr",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
     },
     data: devToPost,
   };
